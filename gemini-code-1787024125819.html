@@ -22,6 +22,34 @@
             padding: 0;
             line-height: 1.6;
         }
+        <div id="contador-boda" style="position:fixed;top:0;left:0;right:0;z-index:99999;background:#C4CB20;padding:10px 8px;text-align:center;font-family:'Jost',Arial,sans-serif;box-shadow:0 2px 8px rgba(0,0,0,.15);">
+  <div style="display:flex;justify-content:center;gap:22px;flex-wrap:wrap;">
+    <div><span id="cb-d" style="font-family:Georgia,serif;font-weight:800;font-size:20px;color:#fff;">00</span><br><span style="font-size:9px;letter-spacing:.15em;color:#3A3A38;">DÍAS</span></div>
+    <div><span id="cb-h" style="font-family:Georgia,serif;font-weight:800;font-size:20px;color:#fff;">00</span><br><span style="font-size:9px;letter-spacing:.15em;color:#3A3A38;">HORAS</span></div>
+    <div><span id="cb-m" style="font-family:Georgia,serif;font-weight:800;font-size:20px;color:#fff;">00</span><br><span style="font-size:9px;letter-spacing:.15em;color:#3A3A38;">MIN</span></div>
+    <div><span id="cb-s" style="font-family:Georgia,serif;font-weight:800;font-size:20px;color:#fff;">00</span><br><span style="font-size:9px;letter-spacing:.15em;color:#3A3A38;">SEG</span></div>
+  </div>
+</div>
+<div style="height:56px;"></div>
+<script>
+(function(){
+  var boda = new Date('2027-03-06T17:00:00-06:00').getTime();
+  function tick(){
+    var diff = boda - Date.now();
+    if(diff < 0) diff = 0;
+    var d = Math.floor(diff/86400000);
+    var h = Math.floor(diff/3600000)%24;
+    var m = Math.floor(diff/60000)%60;
+    var s = Math.floor(diff/1000)%60;
+    var pad = function(n){ return String(n).padStart(2,'0'); };
+    document.getElementById('cb-d').textContent = pad(d);
+    document.getElementById('cb-h').textContent = pad(h);
+    document.getElementById('cb-m').textContent = pad(m);
+    document.getElementById('cb-s').textContent = pad(s);
+  }
+  tick(); setInterval(tick, 1000);
+})();
+</script>
 
         header {
             text-align: center;
@@ -224,4 +252,3 @@
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * Claro que sí, estoy listo para ayudarte. ¿De qué proyecto, lenguaje o funcionalidad específica necesitas que redacte el código completo?
