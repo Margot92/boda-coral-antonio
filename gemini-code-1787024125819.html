@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boda Coral & Antonio | 6 de Marzo 2027</title>
+    <!-- Google Fonts para un estilo elegante -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #c5a059; /* Dorado elegante */
+            --bg-color: #fcfbf9;
+            --text-color: #444444;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: white;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Cuenta Regresiva */
+        .countdown-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .countdown-box {
+            background: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            min-width: 70px;
+        }
+
+        .countdown-box span {
+            display: block;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .countdown-box label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #777;
+        }
+
+        /* Secciones */
+        section {
+            background: white;
+            margin: 30px 0;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+            margin: 10px 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #b08d46;
+        }
+
+        /* Formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        input, select, textarea {
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-family: 'Montserrat', sans-serif;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label {
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p>¡Nos casamos!</p>
+        <h1>Coral & Antonio</h1>
+        <p>6 de Marzo, 2027 • Mérida, Yucatán</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Cuenta Regresiva -->
+        <section>
+            <h2>Falta muy poco</h2>
+            <div class="countdown-container" id="countdown">
+                <div class="countdown-box"><span id="days">0</span><label>Días</label></div>
+                <div class="countdown-box"><span id="hours">0</span><label>Horas</label></div>
+                <div class="countdown-box"><span id="minutes">0</span><label>Min</label></div>
+                <div class="countdown-box"><span id="seconds">0</span><label>Seg</label></div>
+            </div>
+        </section>
+
+        <!-- Itinerario y Ubicación -->
+        <section>
+            <h2>Ubicación y Detalles</h2>
+            <p>Acompañanos a celebrar nuestra historia en el corazón de Mérida.</p>
+            <a href="https://maps.app.goo.gl/TU_ENLACE_DE_MAPS" target="_blank" class="btn">Ver Ubicación en Google Maps</a>
+        </section>
+
+        <!-- Código de Vestimenta -->
+        <section>
+            <h2>Código de Vestimenta</h2>
+            <p><strong>Formal</strong></p>
+            <p>Mujeres: Largo formal<br>Hombres: Guayabera manga larga o traje de lino</p>
+            <p style="font-size: 0.85rem; color: #777;">* Agradecemos evitar tonos blanco, marfil, rosa claro, verde manzana, fucsia, verde y beige.</p>
+        </section>
+
+        <!-- Formulario de Asistencia -->
+        <section>
+            <h2>Confirma tu Asistencia</h2>
+            <p>Por favor confirma antes del 1 de febrero de 2027</p>
+            <!-- REEMPLAZA "TU_ENDPOINT_DE_FORMSPREE" con el link que te dé Formspree.io -->
+            <form action="https://formspree.io/f/TU_ENDPOINT_DE_FORMSPREE" method="POST">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre y apellido">
+
+                <label for="asistencia">¿Asistirás?</label>
+                <select id="asistencia" name="asistencia">
+                    <option value="Si">Sí, ahí estaré</option>
+                    <option value="No">No podré asistir</option>
+                </select>
+
+                <label for="acompanantes">Número de acompañantes:</label>
+                <input type="number" id="acompanantes" name="acompanantes" min="0" max="5" value="0">
+
+                <button type="submit" class="btn" style="margin-top: 10px; width: 100%;">Enviar Confirmación</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Hecho con amor para nuestra boda • 2027</p>
+    </footer>
+
+    <!-- Script para la Cuenta Regresiva -->
+    <script>
+        const weddingDate = new Date("March 6, 2027 00:00:00").getTime();
+
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * Claro que sí, estoy listo para ayudarte. ¿De qué proyecto, lenguaje o funcionalidad específica necesitas que redacte el código completo?
